@@ -1,0 +1,42 @@
+{
+  "name": "flight-to-calendar",
+  "version": "1.0.0",
+  "description": "Convert flight numbers and dates into downloadable calendar events.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasturrell/flight-to-calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasturrell/flight-to-calendar/issues"
+  },
+  "homepage": "https://github.com/thomasturrell/flight-to-calendar#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "file-saver": "^2.0.5",
+    "luxon": "^3.6.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/luxon": "^3.6.2",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.24.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.6",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
