@@ -19,7 +19,7 @@ export const FlightForm = () => {
     try {
       const flightData = await fetchFlightTimes(flightNumber, date);
 
-      //Prints each flght to the console for debugging
+      //Prints each flight to the console for debugging
       flightData.forEach((flight) => {
         console.log(
           `Flight Number: ${flight.flightNumber}, Departure: ${flight.departureLocalTime}, Arrival: ${flight.arrivalLocalTime}`
