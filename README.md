@@ -18,8 +18,7 @@ npm install
 npm run dev
 ```
 
-> You'll need a [RapidAPI](https://rapidapi.com/) key to use the AeroDataBox API. Replace `<YOUR_RAPIDAPI_KEY>` in `src/utils/flightLookup.ts` with your actual key.
-
+> You'll need a [RapidAPI](https://rapidapi.com/) key to use the AeroDataBox API. Replace `<YOUR_RAPIDAPI_KEY>` in `vite.config.ts` with your actual key.
 ## 🛠 Tech Stack
 
 - React
