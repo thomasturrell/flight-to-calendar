@@ -18,7 +18,20 @@ npm install
 npm run dev
 ```
 
-> You'll need a [RapidAPI](https://rapidapi.com/) key to use the AeroDataBox API. Replace `<YOUR_RAPIDAPI_KEY>` in `vite.config.ts` with your actual key.
+### 🔑 Setting Up Your API Key
+
+1. Sign up for a [RapidAPI](https://rapidapi.com/) account and subscribe to the AeroDataBox API.
+2. Create a `.env` file in the root of the project:
+   ```bash
+   touch .env
+   ```
+3. Add your API key to the `.env` file:
+   ```env
+   VITE_RAPIDAPI_KEY=your-actual-rapidapi-key
+   ```
+
+> **Note**: The `VITE_` prefix is required for Vite to expose the variable to the client-side code.
+
 ## 🛠 Tech Stack
 
 - React
