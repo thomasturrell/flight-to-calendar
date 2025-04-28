@@ -7,6 +7,11 @@ export default defineConfig(({ mode }) => {
   const apiKey = env.VITE_RAPIDAPI_KEY;
 
   return {
+    test: {
+      globals: true, // Enable global test functions like `describe` and `it`
+      environment: "jsdom", // Use jsdom for DOM-related tests
+      setupFiles: "./vitest.setup.ts", // Optional: Setup file for global configurations
+    },
     server: {
       proxy: {
         "/api": {
