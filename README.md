@@ -32,6 +32,28 @@ npm run dev
 
 > **Note**: The `VITE_` prefix is required for Vite to expose the variable to the client-side code.
 
+## 🧪 Running Tests
+
+This project uses **Vitest** for testing. Follow these steps to run the tests:
+
+1. Run all tests once (without watch mode):
+
+   ```bash
+   npm run test -- --run
+   ```
+
+2. Run tests in watch mode (default behavior):
+
+   ```bash
+   npm run test
+   ```
+
+3. Open the interactive test UI:
+
+   ```bash
+   npm run test:ui
+   ```
+
 ## 🛠 Tech Stack
 
 - React
