@@ -3,7 +3,9 @@ import * as functions from "firebase-functions";
 
 export const apiProxy = functions.https.onRequest(async (req, res) => {
   const API_KEY = process.env.API_TOKEN;
-  const endpoint = req.url;
+
+  // Remove the "/api" prefix from the endpoint
+  const endpoint = req.url.replace(/^\/api/, "");
 
   try {
     const apiRes = await axios({
