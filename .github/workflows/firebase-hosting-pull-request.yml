@@ -24,5 +24,5 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLIGHT_TO_CALENDAR_762FA }}
-          projectId: flight-to-calendar-762fa
           channelId: auto
+          projectId: flight-to-calendar-762fa
