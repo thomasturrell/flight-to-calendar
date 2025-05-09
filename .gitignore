@@ -1,3 +1,15 @@
+# Vite cache
+.vite/
+
+# Firebase-specific files
+firebase-debug.log
+firebase-debug.*.log
+.firebaserc
+.firebase/
+functions/node_modules/
+functions/lib/
+functions/.runtimeconfig.json
+
 # Logs
 logs
 *.log

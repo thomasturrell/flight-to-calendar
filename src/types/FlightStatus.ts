@@ -5,65 +5,65 @@ export enum FlightStatus {
   /**
    * Status is not available for this flight.
    */
-  Unknown = 0,
+  Unknown = "Unknown",
 
   /**
    * The flight is expected.
    */
-  Expected = 1,
+  Expected = "Expected",
 
   /**
    * The flight is en route.
    */
-  EnRoute = 2,
+  EnRoute = "EnRoute",
 
   /**
    * Check-in is open for the flight.
    */
-  CheckIn = 3,
+  CheckIn = "CheckIn",
 
   /**
    * Boarding is in progress or at the last call.
    */
-  Boarding = 4,
+  Boarding = "Boarding",
 
   /**
    * The gate for the flight is closed.
    */
-  GateClosed = 5,
+  GateClosed = "GateClosed",
 
   /**
    * The flight has departed.
    */
-  Departed = 6,
+  Departed = "Departed",
 
   /**
    * The flight is delayed.
    */
-  Delayed = 7,
+  Delayed = "Delayed",
 
   /**
    * The flight is on approach to its destination.
    */
-  Approaching = 8,
+  Approaching = "Approaching",
 
   /**
    * The flight has arrived.
    */
-  Arrived = 9,
+  Arrived = "Arrived",
 
   /**
    * The flight has been cancelled.
    */
-  Canceled = 10,
+  Canceled = "Canceled",
 
   /**
    * The flight has been diverted to another destination.
    */
-  Diverted = 11,
+  Diverted = "Diverted",
 
   /**
    * The status of the flight is uncertain.
    */
-  CanceledUncertain = 12,
+  CanceledUncertain = "CanceledUncertain",
 }

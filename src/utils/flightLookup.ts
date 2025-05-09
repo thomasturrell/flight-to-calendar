@@ -49,7 +49,7 @@ export async function fetchFlightTimes(
   }
 
   return data.map(
-    (flight: any): Flight => ({
+    (flight): Flight => ({
       departureTime: flight.departure?.scheduledTime?.utc
         ? DateTime.fromFormat(
             flight.departure.scheduledTime.utc,

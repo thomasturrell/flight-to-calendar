@@ -33,6 +33,7 @@ export const FlightForm = () => {
       } else {
         alert("No flights found for the given flight number and date.");
       }
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       alert(
         "Failed to fetch flight details. Please check the flight number or try again later."
