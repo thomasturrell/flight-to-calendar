@@ -22,8 +22,8 @@ export default defineConfig(({ mode }) => {
             "x-rapidapi-host": "aerodatabox.p.rapidapi.com",
             "x-rapidapi-key": apiKey || "",
           },
-          configure: (proxy, _options) => {
-            proxy.on("proxyReq", (proxyReq, req, _res) => {
+          configure: (proxy) => {
+            proxy.on("proxyReq", (proxyReq, req) => {
               console.log(
                 `[vite-proxy] ${req.method} ${req.url} → ${proxyReq.getHeader(
                   "host"
@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => {
               );
             });
 
-            proxy.on("proxyRes", (proxyRes, req, _res) => {
+            proxy.on("proxyRes", (proxyRes, req) => {
               console.log(
                 `[vite-proxy] ← ${req.method} ${req.url} [${proxyRes.statusCode}]`
               );
@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => {
               }
             });
 
-            proxy.on("error", (err, req, _res) => {
+            proxy.on("error", (err, req) => {
               console.error(
                 `[vite-proxy] ERROR on ${req.method} ${req.url}:`,
                 err.message

@@ -10,7 +10,7 @@ export const apiProxy = functions.https.onRequest(async (req, res) => {
   try {
     const apiRes = await axios({
       url: `https://aerodatabox.p.rapidapi.com${endpoint}`,
-      method: req.method as any,
+      method: req.method,
       headers: {
         "x-rapidapi-host": "aerodatabox.p.rapidapi.com",
         "x-rapidapi-key": API_KEY!,
@@ -19,7 +19,7 @@ export const apiProxy = functions.https.onRequest(async (req, res) => {
 
     res.setHeader("Content-Type", "application/json");
     res.status(apiRes.status).send(apiRes.data);
-  } catch (err: any) {
+  } catch (err) {
     console.error("API Proxy error:", err);
     res.status(500).send({ error: "API proxy failed" });
   }
